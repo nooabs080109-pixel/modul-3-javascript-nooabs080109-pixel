@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 2: Buttons</title>
   </head>
   <body>
-    <!-- TODO: Lägg till 5 knappar, där en är korrekt och 4 är inkorrekta -->
+    <h2>Vad är 2 + 2?</h2>
+    <button onclick="showIncorrect()">3</button>
+    <button onclick="showIncorrect()">5</button>
+    <button onclick="showCorrect()">4</button>
+    <button onclick="showIncorrect()">6</button>
+    <button onclick="showIncorrect()">7</button>
   </body>
 
   <script>
     function showCorrect() {
-      alert("Correct!");
+      alert("Rätt svar!");
     }
 
     function showIncorrect() {
-      alert("Incorrect!");
+      alert("Fel svar!");
     }
   </script>
 </html>
